@@ -58,4 +58,4 @@ The app follows the MVVM architecture pattern:
 https://github.com/ayushkarnn/Stocks-App/assets/41507904/bb7af194-7dba-49ef-9e88-23987d057951
 
 ## APK Download
-[Install APK](https://drive.google.com/file/d/1nao7nHUZUm8RvubeNoJQtABapQsbHXPp/view?usp=sharing)
+[Install APK](https://drive.google.com/file/d/1jjk4kDUSGWFSX9lXx4Gg3CGK5_GVkfKz/view?usp=sharing)
