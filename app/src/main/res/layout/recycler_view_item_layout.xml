@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gainCardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:neumorph_shadowColorDark="#2ABBBBBB"
+    app:barrierAllowsGoneWidgets="true"
+    app:neumorph_shadowElevation="6dp"
+    android:layout_margin="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_8sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companyImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Alphabet Inc. - Class A Shares (GOOGL)"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/intersemibold"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/companyImageView" />
+
+        <TextView
+            android:id="@+id/stock_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="$139.72"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/company_name"/>
+
+        <TextView
+            android:id="@+id/price_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+0.45%"
+            android:fontFamily="@font/intermedium"
+            android:textColor="@color/green"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:drawableEndCompat="@drawable/ic_gain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stock_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</soup.neumorphism.NeumorphCardView>

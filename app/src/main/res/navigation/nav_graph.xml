@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/topGainerFragment">
+
+    <fragment
+        android:id="@+id/topGainerFragment"
+        android:name="ayush.karn.stocksapp.fragment.TopGainersFragment"
+        android:label="@string/top_gainers"
+        tools:layout="@layout/fragment_top_gainers" >
+        <action
+            android:id="@+id/action_topGainerFragment_to_companyDetailsFragment"
+            app:destination="@id/companyDetailsFragment">
+            <argument
+                android:name="ticker"
+                app:argType="string"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/topLosersFragment"
+        android:name="ayush.karn.stocksapp.fragment.TopLosersFragment"
+        android:label="@string/top_losers"
+        tools:layout="@layout/fragment_top_losers" >
+        <action
+            android:id="@+id/action_topLosersFragment_to_companyDetailsFragment"
+            app:destination="@id/companyDetailsFragment">
+            <argument
+                android:name="ticker"
+                app:argType="string"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/companyDetailsFragment"
+        android:name="ayush.karn.stocksapp.fragment.CompanyDetailsFragment"
+        android:label="CompanyDetailsFragment" >
+        <argument
+            android:name="ticker"
+            app:argType="string" />
+    </fragment>
+</navigation>
